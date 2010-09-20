@@ -31,6 +31,16 @@ created::
   eggs = createcoverage
 
 
+Code, bugs, ideas
+-----------------
+
+The code is hosted at bitbucket: https://bitbucket.org/reinout/createcoverage
+.
+
+You can also report `issues and bugs and ideas
+<https://bitbucket.org/reinout/createcoverage/issues>`_ there.
+
+
 Development installation
 ------------------------
 
