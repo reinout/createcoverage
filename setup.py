@@ -11,7 +11,7 @@ long_description = '\n\n'.join([
 
 install_requires = [
     'setuptools',
-    'coverage',
+    'coverage >= 3.4',
     ],
 
 tests_require = [
@@ -37,5 +37,8 @@ setup(name='createcoverage',
       entry_points={
           'console_scripts': [
               'createcoverage = createcoverage.script:main',
+              # Hack to make sure bin/coverage exists when we don't otherwise
+              # explicitly tell buildout to create the script for this.
+              'coverage = coverage:main',
           ]},
       )

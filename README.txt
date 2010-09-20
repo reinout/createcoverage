@@ -1,9 +1,27 @@
-createcoverage
-==========================================
+Createcoverage
+==============
 
-Introduction
+This package installs one command: ``createcoverage`` that runs your tests
+with coverage.py and opens the coverage reports in your browser.  All with
+just one single handy command.
 
-Usage, etc.
+Assumption: you're using buildout.  Or rather, the assumption is that you have
+a ``bin/test`` command that runs all your tests.
+
+No options are passed to coverage.py, so any extra options you want to give to
+coverage must be put in a ``.coveragerc`` in your buildout's root.  This is a
+good idea in any case :-)  An example .coveragerc that omits code you normally
+don't want to include in a coverage report::
+
+    [report]
+    omit =
+        /home/*/.buildout/eggs/*
+        /usr/*
+        parts/*
+        eggs/*
+        */test*
+
+
 
 
 Development installation
@@ -26,9 +44,5 @@ You'll have to re-run buildout when you or someone else made a change in
 The current package is installed as a "development package", so
 changes in .py files are automatically available (just like with ``python
 setup.py develop``).
-
-If you want to use trunk checkouts of other packages (instead of released
-versions), add them as an "svn external" in the ``local_checkouts/`` directory
-and add them to the ``develop =`` list in buildout.cfg.
 
 Tests can always be run with ``bin/test`` or ``bin\test.exe``.
