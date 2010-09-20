@@ -42,12 +42,8 @@ def main():
 
     coveragebinary = os.path.join(curdir, 'bin', 'coverage')
     if not os.path.exists(coveragebinary):
-        # Assume a system-wide coverage binary exists.
-        coveragebinary = 'coverage'
-
-    if os.path.exists(coveragedir):
-        print "Removing old coverage dir"
-        shutil.rmtree(coveragedir)
+        raise RuntimeError(
+            "Coverage command doesn't exist: %s" % coveragebinary)
 
     print "Running tests in coverage mode (can take a long time)"
     system("%s run %s" % (coveragebinary, testbinary))
