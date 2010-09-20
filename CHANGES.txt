@@ -2,7 +2,7 @@ Changelog of createcoverage
 ===========================
 
 
-0.1 (unreleased)
+0.1 (2010-09-20)
 ----------------
 
 - First working version.
