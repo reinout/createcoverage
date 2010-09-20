@@ -2,7 +2,7 @@ Changelog of createcoverage
 ===========================
 
 
-0.3 (unreleased)
+0.3 (2010-09-20)
 ----------------
 
 - Added missing MANIFEST.in file so that the distribution on pypi is complete
