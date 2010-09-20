@@ -5,7 +5,7 @@ Changelog of createcoverage
 0.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Documentation update: pointing at bitbucket for code, issues, ideas.
 
 
 0.1 (2010-09-20)
