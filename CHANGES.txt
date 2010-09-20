@@ -5,4 +5,8 @@ Changelog of createcoverage
 0.1 (unreleased)
 ----------------
 
+- First working version.
+
+- Copied some code from the "createzopecoverage" package.
+
 - Initial library skeleton created by nensskel.  [reinout]

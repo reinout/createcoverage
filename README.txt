@@ -21,7 +21,14 @@ don't want to include in a coverage report::
         eggs/*
         */test*
 
+Installing ``createcoverage`` in a zc.recipe.egg section is enough.
+Createcoverage itself depends on `coverage.py
+<http://nedbatchelder.com/code/coverage/>`_ and makes sure ``bin/coverage`` is
+created::
 
+  [console_scripts]
+  recipe = zc.recipe.egg
+  eggs = createcoverage
 
 
 Development installation
