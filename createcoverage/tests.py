@@ -67,7 +67,8 @@ class TestCoverage(TestCase):
         testbinary = os.path.join(bindir, 'test')
         os.mkdir(bindir)
         open(testbinary, 'w').write('hello')
-        self.assertRaises(RuntimeError, script.main)
+        script.main()
+        self.assertTrue('Executed coverage run' in executed[0])
 
     def test_normal_run(self):
         bindir = os.path.join(self.tempdir, 'bin')

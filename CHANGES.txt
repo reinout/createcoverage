@@ -5,7 +5,8 @@ Changelog of createcoverage
 0.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Falling back to global 'coverage' binary if there isn't one in
+  ``bin/coverage``.
 
 
 0.3 (2010-09-20)

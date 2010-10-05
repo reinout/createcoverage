@@ -42,8 +42,8 @@ def main():
 
     coveragebinary = os.path.join(curdir, 'bin', 'coverage')
     if not os.path.exists(coveragebinary):
-        raise RuntimeError(
-            "Coverage command doesn't exist: %s" % coveragebinary)
+        print "Trying globally installed coverage command."
+        coveragebinary = 'coverage'
 
     print "Running tests in coverage mode (can take a long time)"
     system("%s run %s" % (coveragebinary, testbinary))
