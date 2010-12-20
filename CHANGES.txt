@@ -2,7 +2,7 @@ Changelog of createcoverage
 ===========================
 
 
-0.5 (unreleased)
+1.0 (2010-12-20)
 ----------------
 
 - Added option ("-d") for specifying an output directory.  Specifying it also
