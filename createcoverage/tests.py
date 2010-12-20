@@ -52,12 +52,15 @@ class TestCoverage(TestCase):
         os.chdir(self.tempdir)
         global executed
         executed = []
+        self.orig_sysargv = sys.argv[1:]
+        sys.argv[1:] = []
 
     def tearDown(self):
         webbrowser.open = self.orig_webbrowser_open
         script.system = self.orig_system
         os.chdir(self.orig_dir)
         shutil.rmtree(self.tempdir)
+        sys.argv[1:] = self.orig_sysargv
 
     def test_missing_bin_test(self):
         self.assertRaises(RuntimeError, script.main)
@@ -79,7 +82,23 @@ class TestCoverage(TestCase):
         open(coveragebinary, 'w').write('hello')
         script.main()
         self.assertTrue('bin/coverage run' in executed[0])
-        self.assertTrue('bin/coverage html' in executed[1])
+        self.assertTrue(
+            'bin/coverage html --directory=htmlcov' in executed[1])
         self.assertTrue('Opened' in executed[2])
+        script.main()
+
+    def test_options(self):
+        bindir = os.path.join(self.tempdir, 'bin')
+        testbinary = os.path.join(bindir, 'test')
+        coveragebinary = os.path.join(bindir, 'coverage')
+        os.mkdir(bindir)
+        open(testbinary, 'w').write('hello')
+        open(coveragebinary, 'w').write('hello')
+        sys.argv[1:] = ['-v', '-d', 'output']
+        script.main()
+        self.assertTrue('bin/coverage run' in executed[0])
+        self.assertTrue(
+            'bin/coverage html --directory=output' in executed[1])
+        self.assertTrue(len(executed), 1)  # No "opened in webbrowser"!
         script.main()
 

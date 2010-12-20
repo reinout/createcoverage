@@ -5,7 +5,10 @@ Changelog of createcoverage
 0.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Added option ("-d") for specifying an output directory.  Specifying it also
+  makes sure the results aren't opened in a webbrowser (as the option is
+  intended for offline operation for automatic documentation generation
+  purposes).
 
 
 0.4 (2010-10-05)
