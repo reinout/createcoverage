@@ -34,7 +34,7 @@ class TestSystemCommand(TestCase):
         sys.exit = self.orig_exit
 
     def test_correct_command(self):
-        script.system("dir")
+        script.system("more")
 
     def test_failing_command(self):
         self.assertRaises(RuntimeError, script.system, "non_existing_command")
