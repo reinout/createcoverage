@@ -2,7 +2,7 @@ Changelog of createcoverage
 ===========================
 
 
-1.1 (unreleased)
+1.1 (2011-04-19)
 ----------------
 
 - Making the path to the coverage index.html file absolute before opening it
