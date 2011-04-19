@@ -5,7 +5,8 @@ Changelog of createcoverage
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Making the path to the coverage index.html file absolute before opening it
+  in the webbrowser. This prevents OSX from complaining that it isn't a URL.
 
 
 1.0 (2010-12-20)

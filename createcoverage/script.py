@@ -76,5 +76,8 @@ def main():
     system("%s html --directory=%s" % (coveragebinary, coverage_dir))
     logger.info("Wrote coverage files to %s", coverage_dir)
     if open_in_browser:
-        webbrowser.open(os.path.join(coverage_dir, 'index.html'))
+        index_file = os.path.abspath(
+            os.path.join(coverage_dir, 'index.html'))
+        logger.debug("About to open %s in your webbrowser.", index_file)
+        webbrowser.open(index_file)
         logger.info("Opened reports in your browser.")
