@@ -79,5 +79,5 @@ def main():
         index_file = os.path.abspath(
             os.path.join(coverage_dir, 'index.html'))
         logger.debug("About to open %s in your webbrowser.", index_file)
-        webbrowser.open(index_file)
+        webbrowser.open('file://' + index_file)
         logger.info("Opened reports in your browser.")

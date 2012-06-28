@@ -5,7 +5,8 @@ Changelog of createcoverage
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fixed a problem with opening the coverage index.html file on OS X when
+  using Pyhton 2.7 or newer by using a file URL instead of a path.
 
 
 1.1 (2011-04-19)
