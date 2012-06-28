@@ -2,7 +2,7 @@ Changelog of createcoverage
 ===========================
 
 
-1.2 (unreleased)
+1.2 (2012-06-28)
 ----------------
 
 - Fixed a problem with opening the coverage ``index.html`` file on OS X when
