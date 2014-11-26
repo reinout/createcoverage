@@ -102,3 +102,15 @@ class TestCoverage(TestCase):
         self.assertTrue(len(executed), 1)  # No "opened in webbrowser"!
         script.main()
 
+    def test_test_args(self):
+        bindir = os.path.join(self.tempdir, 'bin')
+        testbinary = os.path.join(bindir, 'test')
+        coveragebinary = os.path.join(bindir, 'coverage')
+        os.mkdir(bindir)
+        open(testbinary, 'w').write('hello')
+        open(coveragebinary, 'w').write('hello')
+        sys.argv[1:] = ['-t', '-m dummy']
+        script.main()
+        self.assertTrue('bin/coverage run' in executed[0])
+        self.assertTrue('{} -m dummy'.format(testbinary) in executed[0]
+        )

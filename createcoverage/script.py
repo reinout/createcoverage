@@ -46,6 +46,10 @@ def main():
                       action="store", type="string", dest="output_dir",
                       default='',
                       help="")
+    parser.add_option("-t", "--test-args",
+                      action="store", type="string", dest="test_args",
+                      default='',
+                      help="Arguments passed to bin/test")
     (options, args) = parser.parse_args()
     if options.verbose:
         log_level = logging.DEBUG
@@ -65,7 +69,10 @@ def main():
         coveragebinary = 'coverage'
 
     logger.info("Running tests in coverage mode (can take a long time)")
-    system("%s run %s" % (coveragebinary, testbinary))
+    parts = [coveragebinary, 'run', testbinary]
+    if options.test_args:
+        parts.append(options.test_args)
+    system(" ".join(parts))
     logger.debug("Creating coverage reports...")
     if options.output_dir:
         coverage_dir = options.output_dir
