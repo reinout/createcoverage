@@ -4,7 +4,7 @@ Changelog of createcoverage
 1.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Some internal cleanup and a small pypi metadata fix.
 
 
 1.3 (2014-12-09)

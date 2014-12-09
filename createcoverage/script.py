@@ -39,18 +39,21 @@ def main():
     """Create coverage reports and open them in the browser."""
     usage = "Usage: %prog PATH_TO_PACKAGE"
     parser = optparse.OptionParser(usage=usage)
-    parser.add_option("-v", "--verbose",
-                      action="store_true", dest="verbose", default=False,
-                      help="Show debug output")
-    parser.add_option("-d", "--output-dir",
-                      action="store", type="string", dest="output_dir",
-                      default='',
-                      help="")
-    parser.add_option("-t", "--test-args",
-                      action="store", type="string", dest="test_args",
-                      default='',
-                      help=("Pass argument on to bin/test. Quote the argument, " +
-                            "for instance \"-t '-m somemodule'\"."))
+    parser.add_option(
+        "-v", "--verbose",
+        action="store_true", dest="verbose", default=False,
+        help="Show debug output")
+    parser.add_option(
+        "-d", "--output-dir",
+        action="store", type="string", dest="output_dir",
+        default='',
+        help="")
+    parser.add_option(
+        "-t", "--test-args",
+        action="store", type="string", dest="test_args",
+        default='',
+        help=("Pass argument on to bin/test. Quote the argument, " +
+              "for instance \"-t '-m somemodule'\"."))
     (options, args) = parser.parse_args()
     if options.verbose:
         log_level = logging.DEBUG

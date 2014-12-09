@@ -10,6 +10,7 @@ from createcoverage import script
 
 executed = []
 
+
 def mock_sys_exit(exit_code):
     raise RuntimeError("MOCK sys.exit(%s)" % exit_code)
 
@@ -112,5 +113,4 @@ class TestCoverage(TestCase):
         sys.argv[1:] = ['-t', '-m dummy']
         script.main()
         self.assertTrue('bin/coverage run' in executed[0])
-        self.assertTrue('{} -m dummy'.format(testbinary) in executed[0]
-        )
+        self.assertTrue('{} -m dummy'.format(testbinary) in executed[0])
