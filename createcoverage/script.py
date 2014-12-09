@@ -49,7 +49,8 @@ def main():
     parser.add_option("-t", "--test-args",
                       action="store", type="string", dest="test_args",
                       default='',
-                      help="Arguments passed to bin/test")
+                      help=("Pass argument on to bin/test. Quote the argument, " +
+                            "for instance \"-t '-m somemodule'\"."))
     (options, args) = parser.parse_args()
     if options.verbose:
         log_level = logging.DEBUG
