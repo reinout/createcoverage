@@ -26,9 +26,9 @@ Createcoverage itself depends on `coverage.py
 <http://nedbatchelder.com/code/coverage/>`_ and makes sure ``bin/coverage`` is
 created::
 
-  [console_scripts]
-  recipe = zc.recipe.egg
-  eggs = createcoverage
+    [console_scripts]
+    recipe = zc.recipe.egg
+    eggs = createcoverage
 
 
 Code, bugs, ideas
@@ -38,7 +38,8 @@ The code is hosted at bitbucket: https://bitbucket.org/reinout/createcoverage
 .
 
 You can also report `issues and bugs and ideas
-<https://bitbucket.org/reinout/createcoverage/issues>`_ there.
+<https://bitbucket.org/reinout/createcoverage/issues>`_ there. Pull
+requests are of course also very welcome :-)
 
 
 Development installation
@@ -47,11 +48,11 @@ Development installation
 The first time, you'll have to run the "bootstrap" script to set up setuptools
 and buildout::
 
-    $> python bootstrap.py
+    $ python bootstrap.py
 
 And then run buildout to set everything up::
 
-    $> bin/buildout
+    $ bin/buildout
 
 (On windows it is called ``bin\buildout.exe``).
 
