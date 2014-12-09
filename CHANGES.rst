@@ -4,7 +4,7 @@ Changelog of createcoverage
 1.3.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Packaging fix. Nothing changed (functionally) compared to 1.3.
 
 
 1.3.1 (2014-12-09)
