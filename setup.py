@@ -3,9 +3,9 @@ from setuptools import setup
 version = '1.4.dev0'
 
 long_description = '\n\n'.join([
-    open('README.txt').read(),
-    open('CREDITS.txt').read(),
-    open('CHANGES.txt').read(),
+    open('README.rst').read(),
+    open('CREDITS.rst').read(),
+    open('CHANGES.rst').read(),
     ])
 
 install_requires = [
