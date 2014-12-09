@@ -1,2 +1,3 @@
 include *.txt
-recursive-include createcoverage *.txt *.py
+include *.rst
+recursive-include createcoverage *.py
