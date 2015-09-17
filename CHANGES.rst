@@ -4,7 +4,15 @@ Changelog of createcoverage
 1.4 (unreleased)
 ----------------
 
+- Note: no functional changes in this release.
+
 - Moved to github: https://github.com/reinout/createcoverage .
+
+- Noted (in the ``setup.py`` classifiers) that we work just fine with
+  python 3!
+
+- Set up travis testing and coveralls.io integration. 100% coverage, of course
+  :-)
 
 
 1.3.2 (2014-12-09)
