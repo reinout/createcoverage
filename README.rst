@@ -1,6 +1,12 @@
 Createcoverage
 ==============
 
+.. image:: https://travis-ci.org/reinout/createcoverage.svg
+    :target: https://travis-ci.org/reinout/createcoverage
+
+.. image:: https://coveralls.io/repos/reinout/createcoverage/badge.svg?branch=master&service=github
+  :target: https://coveralls.io/github/reinout/createcoverage?branch=master
+
 This package installs one command: ``createcoverage`` that runs your tests
 with coverage.py and opens the coverage reports in your browser.  All with
 just one single handy command.
