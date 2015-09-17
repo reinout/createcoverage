@@ -4,7 +4,7 @@ Changelog of createcoverage
 1.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Moved to github: https://github.com/reinout/createcoverage .
 
 
 1.3.2 (2014-12-09)
