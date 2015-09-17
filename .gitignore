@@ -15,3 +15,4 @@ createcoverage.egg-info
 htmlcov
 doc/build/
 nosetests.xml
+coverage.xml

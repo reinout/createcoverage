@@ -1,10 +1,4 @@
-[report]
+[run]
 omit =
-    */eggs/*
-    /usr/*
-    /Library/*
-    parts/*
     eggs/*
-    */test*
-
-ignore_errors = true
+    */python?.?/*
