@@ -10,7 +10,7 @@ long_description = '\n\n'.join([
 
 install_requires = [
     'setuptools',
-    'coverage >= 3.6',
+    'coverage >= 3.7',
     ],
 
 tests_require = [
