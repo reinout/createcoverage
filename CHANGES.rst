@@ -4,7 +4,8 @@ Changelog of createcoverage
 1.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Upped the coverage requirement (to 3.7). Coveralls.io's library needs 3.6
+  and this makes it a bit easier to make sure there's a new enough release.
 
 
 1.4 (2015-09-17)
