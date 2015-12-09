@@ -40,11 +40,11 @@ created::
 Code, bugs, ideas
 -----------------
 
-The code is hosted at bitbucket: https://bitbucket.org/reinout/createcoverage
+The code is hosted at github: https://github.com/reinout/createcoverage
 .
 
 You can also report `issues and bugs and ideas
-<https://bitbucket.org/reinout/createcoverage/issues>`_ there. Pull
+<https://github.com/reinout/createcoverage/issues>`_ there. Pull
 requests are of course also very welcome :-)
 
 
