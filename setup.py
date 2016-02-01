@@ -49,6 +49,6 @@ setup(name='createcoverage',
               'createcoverage = createcoverage.script:main',
               # Hack to make sure bin/coverage exists when we don't otherwise
               # explicitly tell buildout to create the script for this.
-              'coverage = coverage:main',
+              'coverage = coverage.cmdline:main',
           ]},
       )
