@@ -1,6 +1,12 @@
 Changelog of createcoverage
 ===========================
 
+1.6 (unreleased)
+----------------
+
+- Nothing changed yet.
+
+
 1.5 (2016-02-02)
 ----------------
 
