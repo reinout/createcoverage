@@ -1,7 +1,7 @@
 Changelog of createcoverage
 ===========================
 
-1.5 (unreleased)
+1.5 (2016-02-02)
 ----------------
 
 - Fixed ``bin/coverage`` script (it pointed at an old entry point). Note that
