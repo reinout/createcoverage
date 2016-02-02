@@ -4,7 +4,10 @@ Changelog of createcoverage
 1.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fixed ``bin/coverage`` script (it pointed at an old entry point). Note that
+  this script is only included because buildout originally didn't install
+  scripts of dependencies. It *does* now, with the proper configuration. But
+  installing this script ourselves solves every case.
 
 
 1.4.1 (2015-11-11)
